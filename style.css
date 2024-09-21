@@ -337,6 +337,10 @@ i {
     display: none;
 }
 
+#theme-icon {
+    cursor: pointer;
+}
+
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
 
