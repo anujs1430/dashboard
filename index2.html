@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navbar Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="vertical-nav">
+        <div class="navHead mb-3 d-flex justify-content-between">
+            <a href="#" class="navbar-brand text-light">
+                <img src="https://savvyhrms.com/wp-content/uploads/2023/02/logo_savvyhrms-300-t-1.png" alt="brand-logo"
+                    width="70%">
+            </a>
+            <button class="toggle-btn">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <i class="bi bi-house-door-fill"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <!-- Dropdown 1 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <i class="bi bi-toggles"></i> Switch Role
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                </ul>
+            </li>
+
+            <!-- Dropdown 2 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button">
+                    <i class="bi bi-briefcase"></i> Self-Services
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-calendar3"></i>
+                    Attendence
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-calendar-day"></i>
+                    Leave
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-fingerprint"></i>
+                    Punch
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-stopwatch-fill"></i>
+                    On Duty
+                </a>
+            </li>
+        </ul>
+
+        <!-- bottom menu -->
+        <div class="sticky-bottom pb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-person"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-gear-fill"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- bottom menu -->
+    </nav>
+
+    <nav class="mobile-menu navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://savvyhrms.com/wp-content/uploads/2023/02/logo_savvyhrms-300-t-1.png" alt="brand-logo"
+                    width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-toggles"></i> Switch Role
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-briefcase"></i> Self-Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-calendar3"></i> Attendence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-calendar-day"></i> Leave</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-fingerprint"></i> Punch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-stopwatch-fill"></i>
+                            On Duty
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-person"></i>
+                            My Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-gear-fill"></i>
+                            Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card p-4 main-first-card">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main-content">
+                        <div class="main-head d-flex justify-content-between">
+                            <h4 class="mb-0">Good Morning, Megha !</h4>
+                            <i id="theme-icon" class="bi bi-moon-fill h4"></i>
+                        </div>
+                        <p class="text-secondary1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                        <div class="right-header for-sm-only">
+                            <div class="d-flex justify-content-between align-items-center my-4 flex-flow-reverse"
+                                style="margin-top: -8px;">
+                                <div class="d-flex gap-4">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <i class="bi bi-bell-fill"></i>
+                                </div>
+                                <div class="capsule d-flex">
+                                    <i class="bi bi-person-circle h2"></i>
+                                    <div>
+                                        <h6 class="mb-0"><b>Megha Tomar</b></h6>
+                                        <p class="text-secondary1 mb-0">Chief General Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-hero d-flex gap-3 sm-flex-wrap">
+                            <div class="card py-4 px-3 rounded-5 w-40">
+                                <div class="card-inside">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="bi bi-brightness-high text-3rem"></i>
+                                        <div>
+                                            <h3 class="mb-0">09:32 AM</h3>
+                                            <p class="text-secondary1">RealTime Insight</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h6><b>Today :</b></h6>
+                                        <h6>1 August, 2024</h6>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn btn-danger rounded-pill px-4">View Attendence</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-darkBlue py-4 px-3 rounded-4 text-light w-30">
+                                <div class="card-inside">
+                                    <div class="icon-bg">
+                                        <i class="bi bi-megaphone"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="mb-2">Present Employees</p>
+                                        <h3>235</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-darkRed py-4 px-3 rounded-4 text-light w-30">
+                                <div class="card-inside">
+                                    <div class="icon-bg">
+                                        <i class="bi bi-megaphone"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="mb-2">Absent Employees</p>
+                                        <h3>05</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-section card p-4 mt-4 rounded-5">
+                            <div class="d-flex justify-content-between sm-flex-wrap gap-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-bg">
+                                        <i class="bi bi-megaphone h3  mb-0"></i>
+                                    </div>
+                                    <h4>Announcements</h4>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-bg bg-light">
+                                        <i class="bi bi-megaphone text-blue h3 mb-0"></i>
+                                    </div>
+                                    <h4 class="text-blue">Thought of the day</h4>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="text-secondary1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Odit
+                                    id vero reiciendis neque provident dignissimos impedit voluptatum hic, fugiat nam
+                                    quo molestiae voluptatem vitae maiores nesciunt quisquam, ipsum illo eum.</p>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-secondary1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Odit
+                                    id vero reiciendis neque provident dignissimos impedit voluptatum hic, fugiat nam
+                                    quo molestiae voluptatem vitae maiores nesciunt quisquam, ipsum illo eum.</p>
+                            </div>
+
+                            <div class="mt-4">
+
+                                <h6>Here you can put more content...</h6>
+                                <p class="text-secondary1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Accusamus, doloribus doloremque iusto ut quos corporis inventore cupiditate aliquam!
+                                    Mollitia reprehenderit voluptate, impedit quaerat perspiciatis ex. Ipsa nesciunt
+                                    tempora
+                                    delectus veritatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="right-sideBar">
+                        <div class="right-header for-lg-only">
+                            <div class="d-flex justify-content-between align-items-center" style="margin-top: -8px;">
+                                <div class="d-flex gap-4">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <i class="bi bi-bell-fill"></i>
+                                </div>
+                                <div class="capsule d-flex">
+                                    <i class="bi bi-person-circle h2"></i>
+                                    <div>
+                                        <h6 class="mb-0"><b>Megha Tomar</b></h6>
+                                        <p class="text-secondary1 mb-0">Chief General Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-main mt5rem d-flex gap-2 text-center justify-content-center">
+                            <button class="btn btn-lightGreen">Attendence</button>
+                            <button class="btn btn-lightRed">Upcoming Holidays</button>
+                        </div>
+
+                        <div class="mt-4 calender-section">
+                            <div class="month">
+                                <h5>August, 2024</h5>
+                                <div>
+                                    <i class="bi bi-chevron-left"></i>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+
+                            </div>
+
+                            <ul class="weekdays">
+                                <li>Mo</li>
+                                <li>Tu</li>
+                                <li>We</li>
+                                <li>Th</li>
+                                <li>Fr</li>
+                                <li>Sa</li>
+                                <li>Su</li>
+                            </ul>
+
+                            <ul class="days">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li><span class="active">10</span></li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li>31</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-3 Holiday-section">
+                            <h5>Holidays</h5>
+                            <div class="d-flex gap-5">
+                                <p class="mb-0 text-secondary1"><b>15 August</b></p>
+                                <p class="mb-0 text-red"><b>Independence Day</b></p>
+                            </div>
+                            <div class="d-flex gap-5 mt-1">
+                                <p class="mb-0 text-secondary1"><b>15 August</b></p>
+                                <p class="mb-0 text-red"><b>Independence Day</b></p>
+                            </div>
+                        </div>
+
+                        <div class="birthday-section mt-4">
+                            <div class="right-main d-flex gap-2">
+                                <button class="btn btn-lightGreen">Attendence</button>
+                                <button class="btn btn-lightRed">Upcoming Holidays</button>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 more-content">
+                            <h6>Here Your Can Put More Content...</h6>
+                            <p class="text-secondary1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Necessitatibus labore perspiciatis iure libero minima voluptatum hic repellat maiores,
+                                temporibus quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
