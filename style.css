@@ -376,6 +376,24 @@ i {
     }
 }
 
+@media only screen and (min-width:1000px) and (max-width: 1200px) {
+    .main-content .main-hero .card-inside h3 {
+        font-size: 18px;
+    }
+
+    .text-3rem {
+        font-size: 2rem;
+    }
+
+    .days li .active {
+        padding: 2px 3px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+}
+
 @media only screen and (min-width:300px) and (max-width: 1000px) {
     nav.vertical-nav {
         display: none;
